@@ -121,7 +121,6 @@
     "url": "git://github.com/Automattic/mongoose.git"
   },
   "homepage": "https://mongoosejs.com",
-  "browser": "./dist/browser.umd.js",
   "config": {
     "mongodbMemoryServer": {
       "disablePostinstall": true
