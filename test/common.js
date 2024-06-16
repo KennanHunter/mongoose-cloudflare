@@ -6,7 +6,7 @@
 
 const mongoose = require('../index');
 const Collection = mongoose.Collection;
-const assert = require('assert');
+const assert = require('node:assert');
 
 const collectionNames = new Map();
 

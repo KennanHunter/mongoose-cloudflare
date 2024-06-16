@@ -1,6 +1,6 @@
 
 'use strict';
-const assert = require('assert');
+const assert = require('node:assert');
 const mongoose = require('../../lib');
 const Schema = mongoose.Schema;
 const ObjectId = mongoose.Types.ObjectId;
@@ -118,7 +118,7 @@ mongoose.connection.on('open', function() {
           BlogPost.populate(docs, opts, function(err, docs) {
             assert.ifError(err);
             console.log('populated');
-            const s = require('util').inspect(docs, { depth: null, colors: true });
+            const s = require('node:util').inspect(docs, { depth: null, colors: true });
             console.log(s);
             done();
           });
